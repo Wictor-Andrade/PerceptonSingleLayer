@@ -4,24 +4,15 @@ package perceptonsinglelayer;
 import java.util.ArrayList;
 
 public class InputLayer {
-    private final ArrayList<Double> inputs;
-    private double weight;
+    private final ArrayList<Input> inputs;
 
-    public InputLayer(ArrayList<Double> inputs) {
+    public InputLayer(ArrayList<Input> inputs) {
         this.inputs = inputs;
-        this.weight = 0;
     }
 
-    public double getWeight() {
-        return weight;
+    public ArrayList<Input> getInputs() {
+        return inputs;
     }
 
-    public void setWeight(double weight) {
-        this.weight = weight;
-    }
 
-    public ArrayList<Double> getInputs() {
-        return this.inputs;
-    }
 }
-
